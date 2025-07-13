@@ -13,12 +13,15 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        $product = new Product();
 
-        $product->name = 'Brillos';
-        $product->price = 1234;
-        $product->description = 'Son brillos bonitos';
+        // Product::factory(10)->create();
 
-        $product->save();
+        // $product = new Product();
+
+        // $product->name = 'Brillos';
+        // $product->price = 1234;
+        // $product->description = 'Son brillos bonitos';
+
+        // $product->save();
     }
 }
