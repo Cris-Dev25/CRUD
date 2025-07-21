@@ -22,8 +22,8 @@ Route::middleware([
 
 //GRUPO DE RUTAS CRUD PRODUCTOS
 Route::controller(ProductoController::class)->group(function(){
-    Route::get('/productos', 'index');
-    Route::get('/productos/crear', 'create');
-    Route::get('/productos/crear', '');
+    Route::get('/productos', 'index')->name('cursos.index');
+    Route::get('/productos/crear', 'create')->name('cursos.create');
+    // Route::get('/productos/crear/123', 'none');
 });
 
